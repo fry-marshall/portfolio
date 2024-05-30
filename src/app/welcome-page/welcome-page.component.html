@@ -1,8 +1,17 @@
 <div class="container is-flex is-column">
     <div class="nav is-flex">
-        <span><a href="" class="link">Projects</a></span>
-        <a href="" class="link">Description</a>
-        <a href="" class="link">About me</a>
+        <a href="" class="link">
+            <app-text>Projects</app-text>
+            <div class="text-underline"></div>
+        </a>
+        <a href="" class="link">
+            <app-text>Description</app-text>
+            <div class="text-underline"></div>
+        </a>
+        <a href="" class="link">
+            <app-text>About me</app-text>
+            <div class="text-underline"></div>
+        </a>
     </div>
     <div class="banner is-flex is-column is-justify-center">
         <span><app-text class="introduction">Hi,</app-text></span>
@@ -11,17 +20,17 @@
         <span class="tips"><app-text>Welcome in my world</app-text></span>
     </div>
     <div class="bottom is-flex">
-        <div class="anim">
+        <div class="anim is-cursor-pointer" (click)="goToLinkedin()">
             <div class="contact linkedin is-flex is-justify-center is-align-center">
                 <img src="/assets/linkedin.png" alt="">
             </div>
         </div>
-        <div class="anim">
+        <div class="anim is-cursor-pointer" (click)="goToGithub()">
             <div class="contact github is-flex is-justify-center is-align-center">
                 <img src="/assets/github.png" alt="">
             </div>
         </div>
-        <div class="anim">
+        <div class="anim is-cursor-pointer" (click)="downloadCV()">
             <div class="download is-flex is-justify-center is-align-center">
                 <app-icon name="download"></app-icon>
                 <app-text>CV</app-text>
