@@ -1,2 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'library.scss';
+
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+    font-family: "Jura" !important;
+}
+
+@keyframes spanFadeIn {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes spanFadeOut {
+    0%{
+        transform: translateY(-200%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}

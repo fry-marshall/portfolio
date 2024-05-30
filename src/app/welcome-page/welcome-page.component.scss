@@ -1,0 +1,113 @@
+:host {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    app-text, app-icon {
+        color: white;
+    }
+
+    .container {
+        background-color: #0F0F0F;
+        height: calc(100% - 60px);
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+
+        .nav {
+            justify-content: flex-end;
+
+            a {
+                margin-right: 50px;
+                color: white;
+            }
+        }
+
+        .banner {
+            margin: auto;
+
+            .introduction {
+                font-size: 100px;
+                font-weight: 700;
+            }
+
+            .tips {
+                align-self: center;
+                margin-top: 18px;
+                padding: 10px;
+                border: 1px solid #ffffff;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .bottom{
+        align-self: center;
+    }
+
+    .contact{
+        height: 26px;
+        width: 27px;
+        border-radius: 5px;
+
+        img{
+            width: 20px;
+        }
+    }
+
+    .linkedin{
+        background-color: #0274B3;
+    }
+
+    .github{
+        background-color: #ffffff;
+    }
+
+    span{
+        overflow: hidden;
+    }
+    span:nth-child(1) > app-text{
+        transform: translateY(100%);
+        animation: spanFadeIn 500ms ease forwards;
+    }
+
+    span:nth-child(2) > app-text{
+        transform: translateY(100%);
+        animation: spanFadeIn 500ms ease forwards;
+        animation-delay: 500ms;
+    }
+
+    span:nth-child(3) > app-text{
+        transform: translateY(-200%);
+        animation: spanFadeOut 500ms ease forwards;
+        animation-delay: 500ms;
+    }
+
+    .anim{
+        overflow: hidden;
+        margin-right: 20px;
+    }
+
+    .anim:last-child{
+        margin-right: 0;
+    }
+
+    .anim:nth-child(1) > div{
+        transform: translateY(-200%);
+        animation: spanFadeOut 500ms ease forwards;
+        animation-delay: 700ms;
+    }
+
+    .anim:nth-child(2) > div{
+        transform: translateY(106%);
+        animation: spanFadeIn 500ms ease forwards;
+        animation-delay: 800ms;
+    }
+
+    .anim:nth-child(3) > div{
+        transform: translateY(-200%);
+        animation: spanFadeOut 500ms ease forwards;
+        animation-delay: 800ms;
+    }
+}
