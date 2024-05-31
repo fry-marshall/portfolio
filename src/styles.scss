@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'library.scss';
 
+body {
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+    box-sizing: border-box;
+}
+
 html,
 body,
 p,
@@ -14,21 +22,21 @@ button {
 }
 
 @keyframes spanFadeIn {
-    0%{
+    0% {
         transform: translateY(100%);
     }
 
-    100%{
+    100% {
         transform: translateY(0);
     }
 }
 
 @keyframes spanFadeOut {
-    0%{
+    0% {
         transform: translateY(-200%);
     }
 
-    100%{
+    100% {
         transform: translateY(0);
     }
 }

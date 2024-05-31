@@ -1,0 +1,60 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 1.125rem;
+
+    .title{
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    .subtitle{
+        font-size: 36px;
+        font-weight: 500;
+    }
+
+    .content{
+        img{
+            margin-top: 40px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 40px;
+        }
+    }
+
+    .desc{
+        width: 38%;
+        margin-left: 140px;
+    }
+
+    .description{
+        margin-top: 90px;
+
+        .part{
+            margin-bottom: 50px;
+        }
+
+        .number{
+            margin-right: 20px;
+            font-weight: 700;
+        }
+
+        .detail{
+            
+            .detail-title{
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+
+            .detail-desc{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .bottom{
+        text-decoration: underline;
+    }
+}
