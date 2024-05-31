@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 1.125rem;
+
+    .title{
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .content{
+        margin: auto;
+    }
+
+}

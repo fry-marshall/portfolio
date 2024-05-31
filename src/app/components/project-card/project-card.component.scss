@@ -1,0 +1,14 @@
+:host{
+    .img{
+        width: 400px;
+        height: 400px;
+        background-color: rgb(202, 202, 202);
+        border-radius: 10px;
+    }
+
+    .name, .year, .type-project{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+}

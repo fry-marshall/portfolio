@@ -1,0 +1,8 @@
+<div class="container is-flex is-column">
+    <app-text class="title">PROJECTS</app-text>
+    <div class="content is-flex">
+        <ng-container *ngFor="let project of projects">
+            <app-project-card class="l-margin-right" [project]="project"></app-project-card>
+        </ng-container>
+    </div>
+</div>
