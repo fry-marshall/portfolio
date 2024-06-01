@@ -1,0 +1,15 @@
+<div class="container is-flex is-space-between is-align-center">
+    <app-text class="title">CONTACTS</app-text>
+    <div class="content is-flex">
+        <div class="is-flex l-margin-right">
+            <app-icon name="mail" class="l-margin-right"></app-icon>
+            <app-text class="mail">marshalfry1998@gmail.com</app-text>
+        </div>
+        <div class="contact linkedin is-flex is-justify-center is-align-center is-cursor-pointer l-margin-right" (click)="goToLinkedin()">
+            <img src="/assets/linkedin.png" alt="">
+        </div>
+        <div class="contact github is-flex is-justify-center is-align-center is-cursor-pointer l-margin-right" (click)="goToGithub()">
+            <img src="/assets/github.png" alt="">
+        </div>
+    </div>
+</div>

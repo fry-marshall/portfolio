@@ -13,6 +13,7 @@ import { CardComponent } from './components/card/card.component';
 import { CardExperienceComponent } from './components/card-experience/card-experience.component';
 import { CardSkillComponent } from './components/card-skill/card-skill.component';
 import { CardTechnoComponent } from './components/card-techno/card-techno.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CardTechnoComponent } from './components/card-techno/card-techno.compon
     CardComponent,
     CardExperienceComponent,
     CardSkillComponent,
-    CardTechnoComponent
+    CardTechnoComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
