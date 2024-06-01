@@ -8,6 +8,11 @@ import { AtomesModule } from 'library_v2/src/app/components/atomes/atomes.module
 import { DescriptionComponent } from './description/description.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { CardComponent } from './components/card/card.component';
+import { CardExperienceComponent } from './components/card-experience/card-experience.component';
+import { CardSkillComponent } from './components/card-skill/card-skill.component';
+import { CardTechnoComponent } from './components/card-techno/card-techno.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +20,12 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
     WelcomePageComponent,
     DescriptionComponent,
     ProjectsComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    AboutMeComponent,
+    CardComponent,
+    CardExperienceComponent,
+    CardSkillComponent,
+    CardTechnoComponent
   ],
   imports: [
     BrowserModule,

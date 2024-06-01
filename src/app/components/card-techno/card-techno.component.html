@@ -1,0 +1,9 @@
+<div class="card is-flex is-justify-center is-align-center">
+    <ng-container *ngIf="techno.is_asset_text; else isAssetImg">
+        <app-text class="asset">{{ techno.name }}</app-text>
+    </ng-container>
+    <ng-template #isAssetImg>
+        <img [src]="'/assets/'+ techno.img" alt="">
+    </ng-template>
+</div>
+<app-text class="name">{{ techno.name }}</app-text>

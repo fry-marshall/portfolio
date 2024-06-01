@@ -1,0 +1,31 @@
+:host{
+    .container {
+        margin-top: 50px;
+
+        .date,
+        .institution {
+            color: #737373;
+            font-size: 13px;
+        }
+
+        .role {
+            color: white;
+            font-size: 13px;
+        }
+
+        .institution {
+            text-decoration: underline;
+        }
+
+        .detail {
+            margin-left: 60px;
+        }
+
+        app-icon {
+            color: #737373;
+            display: flex;
+            margin-left: 5px;
+            align-items: flex-end;
+        }
+    }
+}

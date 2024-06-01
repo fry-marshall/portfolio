@@ -1,0 +1,8 @@
+<div class="is-flex container">
+    <app-text class="type fs-14">{{ skill.type }}</app-text>
+    <div class="technos is-flex">
+        <ng-container *ngFor="let techno of skill.technos">
+            <app-card-techno class="m-margin-right is-flex is-column is-align-center" [techno]="techno"></app-card-techno>
+        </ng-container>
+    </div>
+</div>
