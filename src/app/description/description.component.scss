@@ -4,10 +4,10 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    margin: 1.125rem;
+    margin: 11.125rem 1.125rem;
 
     .title{
-        font-size: 36px;
+        font-size: 90px;
         font-weight: 700;
     }
 
@@ -17,8 +17,8 @@
     }
 
     .content{
+        margin-top: 60px;
         img{
-            margin-top: 40px;
             border-top-right-radius: 20px;
             border-bottom-left-radius: 40px;
         }
@@ -56,5 +56,25 @@
 
     .bottom{
         text-decoration: underline;
+    }
+
+    span{
+        overflow: hidden;
+    }
+    span:nth-child(1) > app-text{
+        transform: translateY(100%);
+        animation: spanFadeIn 1s ease forwards;
+    }
+
+    span:nth-child(2) > app-text{
+        transform: translateY(100%);
+        animation: spanFadeIn 1s ease forwards;
+        animation-delay: 100ms;
+    }
+
+    span:nth-child(3) > app-text{
+        transform: translateY(100%);
+        animation: spanFadeIn 500ms ease forwards;
+        animation-delay: 2s;
     }
 }
