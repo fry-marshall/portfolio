@@ -32,13 +32,10 @@
 
     span:nth-child(1) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
     }
 
     span:nth-child(2) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 200ms;
     }
 
 }

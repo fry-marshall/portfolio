@@ -19,49 +19,34 @@
 
     span:nth-child(1) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
     }
 
     span:nth-child(2) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 50ms;
     }
 
     span:nth-child(3) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 100ms;
     }
 
     span:nth-child(4) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 150ms;
     }
 
     span:nth-child(5) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 200ms;
     }
 
     span:nth-child(6) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 250ms;
     }
 
     span:nth-child(7) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 300ms;
     }
 
     span:nth-child(8) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 350ms;
     }
 
 }

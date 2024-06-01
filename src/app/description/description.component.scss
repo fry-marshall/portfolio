@@ -63,18 +63,15 @@
     }
     span:nth-child(1) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 1s ease forwards;
     }
 
     span:nth-child(2) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 1s ease forwards;
         animation-delay: 100ms;
     }
 
     span:nth-child(3) > app-text{
         transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
         animation-delay: 2s;
     }
 }
