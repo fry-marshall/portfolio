@@ -44,7 +44,7 @@ export class ProjectsComponent {
           element.getBoundingClientRect().right <= document.documentElement.clientWidth
         );
         if(isInViewport){
-          element.style.animation = "spanFadeIn 1s ease forwards"
+          element.style.animation = "spanFadeIn 500ms ease forwards"
           element.style.animationDelay = (i*50)+'ms'
         }
       }

@@ -140,8 +140,8 @@ export class AboutMeComponent {
           element.getBoundingClientRect().right <= document.documentElement.clientWidth
         );
         if(isInViewport){
-          element.style.animation = "spanFadeIn 500ms ease forwards"
-          element.style.animationDelay = (i*200)+'ms'
+          element.style.animation = "spanFadeIn 300ms ease forwards"
+          element.style.animationDelay = (i*100)+'ms'
         }
       }
 
