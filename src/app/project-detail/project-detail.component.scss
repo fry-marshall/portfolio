@@ -1,0 +1,53 @@
+:host{
+    app-card-container{
+        min-width: 0;
+        max-width: 350px;
+
+        .description{
+            margin-top: 50px;
+        }
+    }
+
+    .container{
+        margin: 4.125rem 1.125rem;
+
+        .title{
+            font-size: 90px;
+            font-weight: 900;
+        }
+    }
+
+    .cover{
+        img{
+            border-radius: 10px;
+        }
+    }
+
+    .detail-titles{
+        app-text{
+            color: #666666;
+            margin-right: 35px;
+            margin-top: 28px;
+        }
+    }
+
+    .detail-descs{
+        app-text{
+            color: #ffffff;
+            margin-top: 28px;
+        }
+    }
+
+    .short{
+        transform: translateY(24%);
+    }
+
+    .app-pictures{
+        transform: translateY(10%);
+        img{
+            margin: 20px;
+            width: 80%;
+            border-radius: 10px;
+        }
+    }
+}

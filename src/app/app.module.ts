@@ -15,6 +15,8 @@ import { CardSkillComponent } from './components/card-skill/card-skill.component
 import { CardTechnoComponent } from './components/card-techno/card-techno.component';
 import { ContactComponent } from './contact/contact.component';
 import { MoleculesModule } from 'library_v2/src/app/components/molecules/molecules.module';
+import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import { MainViewComponent } from './main-view/main-view.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { MoleculesModule } from 'library_v2/src/app/components/molecules/molecul
     CardExperienceComponent,
     CardSkillComponent,
     CardTechnoComponent,
-    ContactComponent
+    ContactComponent,
+    ProjectDetailComponent,
+    MainViewComponent
   ],
   imports: [
     BrowserModule,

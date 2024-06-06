@@ -1,0 +1,51 @@
+<div class="container">
+    <app-text class="title">{{ currentProject?.name }}</app-text>
+    <div class="is-flex is-space-around short">
+        <div class="cover">
+            <img [src]="'/assets/projects/'+currentProject?.cover" alt="">
+        </div>
+        <div class="short-description is-flex is-column is-space-between">
+            <app-text>{{ currentProject?.short_description }}</app-text>
+            <div class="is-flex is-space-between">
+                <app-card-container title="DETAILS" class="l-margin-top">
+                    <div class="is-flex">
+                        <div class="detail-titles">
+                            <ng-container *ngIf="currentProject?.details?.link">
+                                <app-text class="detail-title">Link: </app-text>
+                            </ng-container>
+                            <ng-container *ngIf="currentProject?.details?.github">
+                                <app-text class="detail-title">Github: </app-text>
+                            </ng-container>
+                            <ng-container *ngIf="currentProject?.details?.figma">
+                                <app-text class="detail-title">Figma: </app-text>
+                            </ng-container>
+                        </div>
+                        <div class="detail-descs">
+                            <ng-container *ngIf="currentProject?.details?.link">
+                                <app-text class="detail-desc wrap">{{ currentProject?.details?.link }}</app-text>
+                            </ng-container>
+                            <ng-container *ngIf="currentProject?.details?.github">
+                                <app-text class="detail-desc wrap">{{currentProject?.details?.github}}</app-text>
+                            </ng-container>
+                            <ng-container *ngIf="currentProject?.details?.figma">
+                                <app-text class="detail-desc wrap">{{currentProject?.details?.figma}}</app-text>
+                            </ng-container>
+                        </div>
+                    </div>
+                </app-card-container>
+
+                <app-card-container title="TECHNOLOGIES USED" class="l-margin-top">
+                    <ng-container *ngFor="let skill of currentProject?.skills">
+                        <app-card-skill [skill]="skill"></app-card-skill>
+                    </ng-container>
+                </app-card-container>
+            </div>
+        </div>
+    </div>
+
+    <div class="app-pictures is-flex is-column is-align-center">
+       <ng-container *ngFor="let picture of currentProject?.pictures">
+            <img [src]="'/assets/projects/' + picture" alt="">
+       </ng-container>
+    </div>
+</div>

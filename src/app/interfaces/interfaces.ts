@@ -10,7 +10,9 @@ export interface Project{
         github?: string,
         figma?: string
     },
-    description?: string
+    short_description?: string,
+    description?: string,
+    pictures?: string[]
 }
 
 export interface Experience{
