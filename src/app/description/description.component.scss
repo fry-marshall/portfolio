@@ -57,21 +57,5 @@
     .bottom{
         text-decoration: underline;
     }
-
-    span{
-        overflow: hidden;
-    }
-    span:nth-child(1) > app-text{
-        transform: translateY(100%);
-    }
-
-    span:nth-child(2) > app-text{
-        transform: translateY(100%);
-        animation-delay: 100ms;
-    }
-
-    span:nth-child(3) > app-text{
-        transform: translateY(100%);
-        animation-delay: 2s;
-    }
+    
 }

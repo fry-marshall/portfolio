@@ -73,26 +73,6 @@
         background-color: #ffffff;
     }
 
-    span{
-        overflow: hidden;
-    }
-    span:nth-child(1) > app-text{
-        transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-    }
-
-    span:nth-child(2) > app-text{
-        transform: translateY(100%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 500ms;
-    }
-
-    span:nth-child(3) > app-text{
-        transform: translateY(-200%);
-        animation: spanFadeOut 500ms ease forwards;
-        animation-delay: 500ms;
-    }
-
     .anim{
         overflow: hidden;
         margin-right: 20px;
@@ -100,24 +80,6 @@
 
     .anim:last-child{
         margin-right: 0;
-    }
-
-    .anim:nth-child(1) > div{
-        transform: translateY(-200%);
-        animation: spanFadeOut 500ms ease forwards;
-        animation-delay: 700ms;
-    }
-
-    .anim:nth-child(2) > div{
-        transform: translateY(106%);
-        animation: spanFadeIn 500ms ease forwards;
-        animation-delay: 800ms;
-    }
-
-    .anim:nth-child(3) > div{
-        transform: translateY(-200%);
-        animation: spanFadeOut 500ms ease forwards;
-        animation-delay: 800ms;
     }
 
     .text-underline{
