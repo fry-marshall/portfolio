@@ -5,35 +5,66 @@
     </div>
     <div class="content is-flex is-space-between">
         <div class="is-flex is-column">
-            <app-card title="EXPERIENCES">
+            <app-card-container title="EXPERIENCES">
                 <ng-container *ngFor="let experience of experiences">
-                    <app-card-experience [experience]="experience"></app-card-experience>
+                    <app-card-experience (click)="openExperiencePopUp(experience)" [experience]="experience"></app-card-experience>
                 </ng-container>
-            </app-card>
-            <app-card title="TECHNOLOGY SKILLS" class="l-margin-top">
+            </app-card-container>
+            <app-card-container title="TECHNOLOGY SKILLS" class="l-margin-top">
                 <ng-container *ngFor="let skill of skills">
                     <app-card-skill [skill]="skill"></app-card-skill>
                 </ng-container>
-            </app-card>
+            </app-card-container>
         </div>
         <div class="is-flex is-column">
-            <app-card title="EDUCATION">
+            <app-card-container title="EDUCATION">
                 <ng-container *ngFor="let education of educations">
                     <app-card-experience [experience]="education"></app-card-experience>
                 </ng-container>
-            </app-card>
-            <app-card title="BOOKS ❤️" class="l-margin-top">
+            </app-card-container>
+            <app-card-container title="BOOKS ❤️" class="l-margin-top">
                 <div class="is-flex l-margin-top books">
                     <ng-container *ngFor="let book of books">
                         <img class="book l-margin-right" [src]="'/assets/' + book.img" alt="">
                     </ng-container>
                 </div>
-            </app-card>
+            </app-card-container>
         </div>
         <div class="is-flex is-column">
-            <app-card title="PHOTOGRAPHY">
-            </app-card>
+            <app-card-container title="PHOTOGRAPHY">
+            </app-card-container>
         </div>
         
     </div>
 </div>
+
+<app-modal *ngIf="openPopUp" [open]="openPopUp">
+    <ng-container header>
+        <app-text class="title-popup">{{ experienceToShow.role }} - {{ experienceToShow.institution }}</app-text>
+    </ng-container>
+    <ng-container body class="is-justify-center is-align-center">
+        <div class="is-flex l-margin-top">
+            <app-icon class="small" name="place"></app-icon>
+            <app-text class="fs-14">{{ experienceToShow.place }}</app-text>
+        </div>
+        <div class="is-flex is-column steps-job l-margin-top">
+            <ng-container *ngFor="let step of experienceToShow.jobs_step">
+                <div class="job is-flex">
+                    <app-text class="l-margin-right fs-14">{{ step.start}} - {{ step.end}} :</app-text>
+                    <app-text class="fs-14">{{ step.position}}</app-text>
+                </div>
+            </ng-container>
+        </div>
+        <app-text class="missions fs-14 l-margin-top">
+            {{ experienceToShow.description }}
+        </app-text>
+        <app-card-container title="TECHNOLOGIES USED" class="l-margin-top">
+            <ng-container *ngFor="let skill of experienceToShow.skills">
+                <app-card-skill [skill]="skill"></app-card-skill>
+            </ng-container>
+        </app-card-container>
+    </ng-container>
+    <ng-container footer class="is-align-center">
+        <app-text (click)="openPopUp = false" class="close fs-14 is-cursor-pointer" color="#00A3FF">Fermer</app-text>
+    </ng-container>
+</app-modal>

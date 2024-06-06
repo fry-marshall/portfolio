@@ -10,8 +10,15 @@ export interface Experience{
     date_to?: string,
     institution?: string,
     role?: string,
+    place?: string,
     description?: string,
-    technos?: Techno[]
+    technos?: Techno[],
+    skills?: Skill[],
+    jobs_step?: {
+        start: string,
+        end: string,
+        position: string
+    }[]
 }
 
 export interface Techno{

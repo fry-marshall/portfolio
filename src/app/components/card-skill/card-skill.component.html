@@ -1,6 +1,6 @@
-<div class="is-flex container">
+<div class="is-flex container" [ngClass]="{'has-margin-top': skill.type !== '', 'has-margin-top-2': skill.type === ''}">
     <app-text class="type fs-14">{{ skill.type }}</app-text>
-    <div class="technos is-flex">
+    <div class="technos is-flex" [ngClass]="{'has-margin-left': skill.type !== ''}">
         <ng-container *ngFor="let techno of skill.technos">
             <app-card-techno class="m-margin-right is-flex is-column is-align-center" [techno]="techno"></app-card-techno>
         </ng-container>

@@ -14,6 +14,7 @@ import { CardExperienceComponent } from './components/card-experience/card-exper
 import { CardSkillComponent } from './components/card-skill/card-skill.component';
 import { CardTechnoComponent } from './components/card-techno/card-techno.component';
 import { ContactComponent } from './contact/contact.component';
+import { MoleculesModule } from 'library_v2/src/app/components/molecules/molecules.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AtomesModule
+    AtomesModule,
+    MoleculesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
