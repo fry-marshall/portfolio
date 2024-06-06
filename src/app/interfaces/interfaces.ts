@@ -2,7 +2,15 @@ export interface Project{
     id?: number,
     name?: string,
     year?: number,
-    type?: string
+    type?: string,
+    cover?: string,
+    skills?: Skill[],
+    details?: {
+        link?: string,
+        github?: string,
+        figma?: string
+    },
+    description?: string
 }
 
 export interface Experience{

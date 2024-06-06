@@ -4,6 +4,10 @@
         height: 400px;
         background-color: rgb(202, 202, 202);
         border-radius: 10px;
+
+        img{
+            border-radius: 10px;
+        }
     }
 
     .name, .year, .type-project{

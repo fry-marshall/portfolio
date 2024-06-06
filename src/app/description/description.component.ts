@@ -10,7 +10,6 @@ export class DescriptionComponent {
   @HostListener('window:scroll', ['$event'])
   onScroll(event: any) {
     const elements = document.getElementsByClassName('animate')
-    console.log(elements)
     for(let i = 0; i < elements.length;i++){
 
       if(elements[i] !== null){
