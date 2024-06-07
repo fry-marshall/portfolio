@@ -95,6 +95,13 @@ export class GlobalServiceService {
       year: 2022,
       type: 'Personal project',
       cover: 'cover-apigen.png'
+    },
+    {
+      id: 4,
+      name: 'Apigen',
+      year: 2022,
+      type: 'Personal project',
+      cover: 'cover-apigen.png'
     }
   ]
   

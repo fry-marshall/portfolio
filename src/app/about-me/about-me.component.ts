@@ -1,12 +1,14 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 import { Book, Experience, Skill } from '../interfaces/interfaces';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss']
 })
-export class AboutMeComponent {
+export class AboutMeComponent implements AfterViewInit {
 
   experiences: Experience[] = [
     {
@@ -218,6 +220,21 @@ export class AboutMeComponent {
   openPopUp: boolean = false
   experienceToShow: Experience = {}
 
+  ngAfterViewInit(): void {
+    gsap.registerPlugin(ScrollTrigger)
+
+    gsap.to('.title-about', {
+      scrollTrigger: {
+        trigger: '.text-about',
+        start: "top 50%",
+        markers: false
+      },
+      y: 0,
+      delay: .2,
+      stagger: .06,
+      duration: .1
+    })
+  }
 
   openExperiencePopUp(experience: Experience){
     this.experienceToShow = experience

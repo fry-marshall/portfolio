@@ -1,17 +1,17 @@
 <div class="container is-flex is-column">
     <div class="text is-flex">
-        <app-text class="title animate">P</app-text>
-        <app-text class="title animate">R</app-text>
-        <app-text class="title animate">O</app-text>
-        <app-text class="title animate">J</app-text>
-        <app-text class="title animate">E</app-text>
-        <app-text class="title animate">C</app-text>
-        <app-text class="title animate">T</app-text>
-        <app-text class="title animate">S</app-text>
+        <app-text class="title-project">P</app-text>
+        <app-text class="title-project">R</app-text>
+        <app-text class="title-project">O</app-text>
+        <app-text class="title-project">J</app-text>
+        <app-text class="title-project">E</app-text>
+        <app-text class="title-project">C</app-text>
+        <app-text class="title-project">T</app-text>
+        <app-text class="title-project">S</app-text>
     </div>
     <div class="content is-flex">
         <ng-container *ngFor="let project of projects">
-            <app-project-card [routerLink]="'project/'+project.id" class="l-margin-right is-cursor-pointer" [project]="project"></app-project-card>
+            <app-project-card [routerLink]="'project/'+project.id" class="is-cursor-pointer" [project]="project"></app-project-card>
         </ng-container>
     </div>
 </div>

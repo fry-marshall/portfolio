@@ -34,10 +34,16 @@
 
         .banner {
             margin: auto;
+            .intro-container{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
 
             .introduction {
                 font-size: 100px;
                 font-weight: 700;
+                transform: translateY(355px);
+                transition: transform .5s;
             }
 
             .tips {
@@ -47,6 +53,12 @@
                 border: 1px solid #ffffff;
                 border-radius: 10px;
                 overflow: hidden;
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+                app-text {
+                    transform: translateY(-400px);
+                    transition: transform .5s;
+                }
             }
         }
     }
@@ -74,8 +86,21 @@
     }
 
     .anim{
-        overflow: hidden;
-        margin-right: 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+        div{
+            margin-right: 20px;
+        }
+
+        div:nth-child(even){
+            transform: translateY(400px);
+            transition: transform .5s;
+        }
+
+        div:nth-child(odd){
+            transform: translateY(-400px);
+            transition: transform .5s;
+        }
     }
 
     .anim:last-child{

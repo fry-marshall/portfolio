@@ -3,10 +3,16 @@
     width: 100%;
     background-color: #0F0F0F;
 
-    .title {
+    .text-about{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .title-about {
         font-size: 100px;
         font-weight: 700;
         color: white;
+        transform: translateY(115px);
+        transition: transform .5s;
     }
 
     .container {

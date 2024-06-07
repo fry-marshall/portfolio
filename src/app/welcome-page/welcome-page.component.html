@@ -16,26 +16,22 @@
         </div>
         <div class="content is-flex is-column is-justify-center">
             <div class="banner is-flex is-column is-justify-center">
-                <app-text class="introduction">Hi,</app-text>
-                <app-text class="introduction">My name is Marshall FRY</app-text>
-                <app-text class="tips">Welcome in my world</app-text>
+                <div class="is-flex is-column intro-container">
+                    <app-text class="introduction">Hi,</app-text>
+                    <app-text class="introduction">My name is Marshall FRY</app-text>
+                </div>
+                <div class="tips"><app-text>Welcome in my world</app-text></div>
             </div>
-            <div class="bottom is-flex">
-                <div class="anim is-cursor-pointer" (click)="goToLinkedin()">
-                    <div class="contact linkedin is-flex is-justify-center is-align-center">
-                        <img src="/assets/linkedin.png" alt="">
-                    </div>
+            <div class="bottom is-flex anim">
+                <div (click)="goToLinkedin()" class="contact is-cursor-pointer linkedin is-flex is-justify-center is-align-center">
+                    <img src="/assets/linkedin.png" alt="">
                 </div>
-                <div class="anim is-cursor-pointer" (click)="goToGithub()">
-                    <div class="contact github is-flex is-justify-center is-align-center">
-                        <img src="/assets/github.png" alt="">
-                    </div>
+                <div class="is-cursor-pointer contact github is-flex is-justify-center is-align-center" (click)="goToGithub()">
+                    <img src="/assets/github.png" alt="">
                 </div>
-                <div class="anim is-cursor-pointer" (click)="downloadCV()">
-                    <div class="download is-flex is-justify-center is-align-center">
-                        <app-icon name="download"></app-icon>
-                        <app-text>CV</app-text>
-                    </div>
+                <div class="is-cursor-pointer download is-flex is-justify-center is-align-center" (click)="downloadCV()">
+                    <app-icon name="download"></app-icon>
+                    <app-text>CV</app-text>
                 </div>
             </div>
         </div>

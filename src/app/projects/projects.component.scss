@@ -4,12 +4,23 @@
     width: 100%;
     margin: 1.125rem;
 
-    .title{
+    .text{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    .title-project{
         font-size: 100px;
+        line-height: 5.9rem;
         font-weight: 700;
+        transform: translateY(115px);
+        transition: transform .5s;
     }
 
     .content{
         margin: auto;
+    }
+
+    app-project-card{
+        margin-right: 70px;
     }
 }
