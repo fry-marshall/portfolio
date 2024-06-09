@@ -1,4 +1,4 @@
-<div class="container is-flex is-column">
+<div class="container-project is-flex is-column">
     <div class="text is-flex">
         <app-text class="title-project">P</app-text>
         <app-text class="title-project">R</app-text>
@@ -9,7 +9,7 @@
         <app-text class="title-project">T</app-text>
         <app-text class="title-project">S</app-text>
     </div>
-    <div class="content is-flex">
+    <div class="content-project is-flex">
         <ng-container *ngFor="let project of projects">
             <app-project-card [routerLink]="'project/'+project.id" class="is-cursor-pointer" [project]="project"></app-project-card>
         </ng-container>
