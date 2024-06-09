@@ -52,7 +52,7 @@ export class ProjectsComponent implements AfterViewInit {
       animation:tween,
       scrub:1,
       invalidateOnRefresh:true,
-      markers:true
+      markers:false
     })
 
   }

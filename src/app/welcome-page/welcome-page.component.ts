@@ -11,7 +11,7 @@ export class WelcomePageComponent implements AfterViewInit {
 
 
   ngAfterViewInit(): void {
-    gsap.registerPlugin(ScrollTrigger)
+    gsap.registerPlugin(ScrollTrigger);
 
     gsap.to('.introduction', {
       y: 0,
@@ -50,5 +50,11 @@ export class WelcomePageComponent implements AfterViewInit {
       'https://github.com/projet-qualite',
       '_blank'
     );
+  }
+
+  scrollTo(id: string){
+    document.getElementById(id)!.scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }
