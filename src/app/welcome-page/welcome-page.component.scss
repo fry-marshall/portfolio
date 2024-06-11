@@ -119,4 +119,39 @@
             background-color: white;
         }
     }
+
+
+    @media screen and (max-width: 1150px) {
+        .introduction{
+            font-size: 85px !important;
+        }
+    }
+
+    @media screen and (max-width: 990px) {
+        .introduction{
+            font-size: 75px !important;
+        }
+    }
+
+    @media screen and (max-width: 882px) {
+        .introduction{
+            font-size: 60px !important;
+        }
+    }
+
+    @media screen and (max-width: 722px) {
+        .introduction{
+            font-size: 45px !important;
+        }
+    }
+
+    @media screen and (max-width: 451px) {
+        .nav {
+            justify-content: space-between !important;
+
+            a {
+                margin-right: 0 !important;
+            }
+        }
+    }
 }

@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div class="container is-flex is-column is-space-between">
+    <div class="container is-flex is-column">
         <div class="nav is-flex">
             <a (click)="scrollTo('projects')" class="link is-cursor-pointer">
                 <app-text>Projects</app-text>
@@ -14,25 +14,23 @@
                 <div class="text-underline"></div>
             </a>
         </div>
-        <div class="content is-flex is-column is-justify-center">
-            <div class="banner is-flex is-column is-justify-center">
-                <div class="is-flex is-column intro-container">
-                    <app-text class="introduction">Hi,</app-text>
-                    <app-text class="introduction">My name is Marshall FRY</app-text>
-                </div>
-                <div class="tips"><app-text>Welcome in my world</app-text></div>
+        <div class="banner is-flex is-column is-justify-center">
+            <div class="is-flex is-column intro-container">
+                <app-text class="introduction">Hi,</app-text>
+                <app-text class="introduction">My name is Marshall FRY</app-text>
             </div>
-            <div class="bottom is-flex anim">
-                <div (click)="goToLinkedin()" class="contact is-cursor-pointer linkedin is-flex is-justify-center is-align-center">
-                    <img src="/assets/linkedin.png" alt="">
-                </div>
-                <div class="is-cursor-pointer contact github is-flex is-justify-center is-align-center" (click)="goToGithub()">
-                    <img src="/assets/github.png" alt="">
-                </div>
-                <div class="is-cursor-pointer download is-flex is-justify-center is-align-center" (click)="downloadCV()">
-                    <app-icon name="download"></app-icon>
-                    <app-text>CV</app-text>
-                </div>
+            <div class="tips"><app-text>Welcome in my world</app-text></div>
+        </div>
+        <div class="bottom is-flex anim">
+            <div (click)="goToLinkedin()" class="contact is-cursor-pointer linkedin is-flex is-justify-center is-align-center">
+                <img src="/assets/linkedin.png" alt="">
+            </div>
+            <div class="is-cursor-pointer contact github is-flex is-justify-center is-align-center" (click)="goToGithub()">
+                <img src="/assets/github.png" alt="">
+            </div>
+            <div class="is-cursor-pointer download is-flex is-justify-center is-align-center" (click)="downloadCV()">
+                <app-icon name="download"></app-icon>
+                <app-text>CV</app-text>
             </div>
         </div>
     </div>
