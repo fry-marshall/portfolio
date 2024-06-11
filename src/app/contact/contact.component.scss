@@ -30,4 +30,16 @@
         background-color: #ffffff;
     }
 
+
+    @media screen and (max-width: 910px) {
+        .container{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .title{
+            font-size: 60px;
+        }
+    }
 }
