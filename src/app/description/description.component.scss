@@ -6,62 +6,103 @@
     width: 100%;
     margin: 11.125rem 1.125rem;
 
-    .text-description{
+    .text-description {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .title-description{
+    .title-description {
         font-size: 90px;
         font-weight: 700;
         transform: translateY(150px);
         transition: transform .5s;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 36px;
         font-weight: 500;
     }
 
-    .content{
+    .content {
         margin-top: 60px;
-        img{
+
+        img {
             border-top-right-radius: 20px;
             border-bottom-left-radius: 40px;
         }
     }
 
-    .desc{
+    .desc {
         width: 38%;
         margin-left: 140px;
     }
 
-    .description{
+    .description {
         margin-top: 90px;
 
-        .part{
+        .part {
             margin-bottom: 50px;
         }
 
-        .number{
+        .number {
             margin-right: 20px;
             font-weight: 700;
         }
 
-        .detail{
-            
-            .detail-title{
+        .detail {
+
+            .detail-title {
                 margin-bottom: 20px;
                 font-weight: 700;
             }
 
-            .detail-desc{
+            .detail-desc {
                 font-size: 14px;
             }
         }
     }
 
-    .bottom{
+    .bottom {
         text-decoration: underline;
     }
-    
+
+    @media screen and (max-width: 1100px) {
+
+        .title-description {
+            font-size: 78px !important;
+        }
+
+        .text-description {}
+    }
+
+    @media screen and (max-width: 968px) {
+        .title-description {
+            font-size: 58px !important;
+        }
+
+        .content {
+            flex-direction: column;
+
+            img {
+                width: calc(100% - 40px);
+            }
+        }
+
+        :host {
+            margin: 1.125rem;
+            ;
+        }
+
+        .desc {
+            margin-top: 40px;
+            margin-left: 0;
+            width: 100%;
+        }
+
+        .detail {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+    }
+
 }
