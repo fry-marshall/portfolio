@@ -31,29 +31,27 @@ export class ProjectsComponent implements AfterViewInit {
       duration: .1
     })
 
-    const content = document.querySelector(".content-project");
+    if(document.body.clientWidth > 968){
+      const content = document.querySelector(".content-project");
 
-    const tween = gsap.to(content, {
-      x: this.getScrollAmount,
-      duration: 3,
-      ease: "none",
-      onStart: () => {
-        console.log("yeah")
-        /* document.body.style.position = 'fixed'
-        document.body.style.width = '100%' */
-      }
-    });
+      const tween = gsap.to(content, {
+        x: this.getScrollAmount,
+        duration: 3,
+        ease: "none",
+      });
+      
+      
+      ScrollTrigger.create({
+        trigger:".container-project",
+        start:"top 20%",
+        end: () => `+=${this.getScrollAmount() * -1}`,
+        animation:tween,
+        scrub:1,
+        invalidateOnRefresh:true,
+        markers:false
+      })
+    }
     
-    
-    ScrollTrigger.create({
-      trigger:".container-project",
-      start:"top 20%",
-      end: () => `+=${this.getScrollAmount() * -1}`,
-      animation:tween,
-      scrub:1,
-      invalidateOnRefresh:true,
-      markers:false
-    })
 
   }
 

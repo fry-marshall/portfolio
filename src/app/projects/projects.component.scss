@@ -4,11 +4,15 @@
     width: 100%;
     margin: 1.125rem;
 
-    .text{
+    .text {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
-    .title-project{
+    .container-project {
+        width: 100%;
+    }
+
+    .title-project {
         font-size: 100px;
         line-height: 5.9rem;
         font-weight: 700;
@@ -16,11 +20,43 @@
         transition: transform .5s;
     }
 
-    .content-project{
+    .content-project {
         margin: auto;
     }
 
-    app-project-card{
+    app-project-card {
         margin-right: 70px;
+    }
+
+    @media screen and (max-width: 968px) {
+        .content-project {
+            flex-direction: column;
+        }
+
+        app-project-card {
+            margin-top: 70px;
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        .title-project {
+            font-size: 70px;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .title-project {
+            font-size: 50px !important;
+        }
+
+        app-project-card ::ng-deep .img {
+            height: 300px !important;
+            width: 300px !important;
+
+            img {
+                width: 300px !important;
+            }
+        }
+
     }
 }
