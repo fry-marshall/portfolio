@@ -5,7 +5,7 @@
     </div>
     <div class="content is-flex is-space-between">
         <div class="is-flex is-column">
-            <app-card-container title="EXPERIENCES">
+            <app-card-container class="l-margin-top" title="EXPERIENCES">
                 <ng-container *ngFor="let experience of experiences">
                     <app-card-experience (click)="openExperiencePopUp(experience)" [experience]="experience"></app-card-experience>
                 </ng-container>
@@ -17,7 +17,7 @@
             </app-card-container>
         </div>
         <div class="is-flex is-column">
-            <app-card-container title="EDUCATION">
+            <app-card-container class="l-margin-top" title="EDUCATION">
                 <ng-container *ngFor="let education of educations">
                     <app-card-experience [experience]="education"></app-card-experience>
                 </ng-container>
@@ -31,7 +31,7 @@
             </app-card-container>
         </div>
         <div class="is-flex is-column">
-            <app-card-container title="PHOTOGRAPHY">
+            <app-card-container class="l-margin-top" title="PHOTOGRAPHY">
             </app-card-container>
         </div>
         
