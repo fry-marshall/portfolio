@@ -35,7 +35,7 @@ export class WelcomePageComponent implements AfterViewInit {
   }
 
   downloadCV(){
-    window.open('/assets/CV.pdf', '_blank');
+    window.open('/assets/CV-FRY.pdf', '_blank');
   }
 
   goToLinkedin(){
