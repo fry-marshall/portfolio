@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 })
 export class MainViewComponent implements AfterViewInit {
 
+
   ngAfterViewInit(): void {
     const lenis = new Lenis()
 

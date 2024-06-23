@@ -22,13 +22,13 @@
                         </div>
                         <div class="detail-descs">
                             <ng-container *ngIf="currentProject?.details?.link">
-                                <app-text class="detail-desc wrap">{{ currentProject?.details?.link }}</app-text>
+                                <app-text (click)="goTo(currentProject?.details?.link)" class="detail-desc wrap is-cursor-pointer">{{ currentProject?.details?.link }}</app-text>
                             </ng-container>
                             <ng-container *ngIf="currentProject?.details?.github">
-                                <app-text class="detail-desc wrap">{{currentProject?.details?.github}}</app-text>
+                                <app-text (click)="goTo(currentProject?.details?.github)" class="detail-desc wrap is-cursor-pointer">{{currentProject?.details?.github}}</app-text>
                             </ng-container>
                             <ng-container *ngIf="currentProject?.details?.figma">
-                                <app-text class="detail-desc wrap">{{currentProject?.details?.figma}}</app-text>
+                                <app-text (click)="goTo(currentProject?.details?.figma)" class="detail-desc wrap is-cursor-pointer">{{currentProject?.details?.figma}}</app-text>
                             </ng-container>
                         </div>
                     </div>
