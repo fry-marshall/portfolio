@@ -1,4 +1,8 @@
 :host{
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
     app-card-container{
         min-width: 0;
         max-width: 350px;
@@ -51,7 +55,7 @@
         transform: translateY(10%);
         img{
             margin: 20px;
-            /* width: 80%; */
+            max-width: 80%;
             border-radius: 10px;
         }
     }
@@ -64,6 +68,7 @@
     @media screen and (max-width: 1140px) {
         .short{
             flex-direction: column;
+            align-items: center;
 
             div{
                 justify-content: start;
@@ -92,7 +97,7 @@
     }
 
     @media screen and (max-width: 450px) {
-        .title-project {
+        .title {
             font-size: 50px !important;
         }
 
@@ -103,6 +108,10 @@
             img {
                 width: 300px !important;
             }
+        }
+
+        .app-pictures{
+            transform: translateY(0%);
         }
 
     }
