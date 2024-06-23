@@ -14,7 +14,7 @@ export class AboutMeComponent implements AfterViewInit {
     {
       date_from: '2022',
       date_to: 'Now',
-      role: 'Frontend Developper',
+      role: 'Frontend Developer',
       institution: 'Netatmo',
       place: 'Boulogne-Billancourt, France',
       jobs_step: [
@@ -78,7 +78,7 @@ export class AboutMeComponent implements AfterViewInit {
     {
       date_from: '2021',
       date_to: '2021',
-      role: 'Frontend Developper',
+      role: 'Frontend Developer',
       institution: 'Ophelia Sensors',
       place: 'Paris, France',
       jobs_step: [
