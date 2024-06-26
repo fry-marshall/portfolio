@@ -1,27 +1,54 @@
-# Portfolio
+# Portfolio 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
+Welcome to my portfolio! 🥳 This project was designed with Figma and developed using Angular. It also utilizes GSAP and Lenis libraries for smooth animations and engaging interactions.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [License](#license)
+- [Contact](#contact)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+My portfolio details what I can do, my experiences, my education, and my skills. Here is the link to access it: [https://mfry.io](https://mfry.io)
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Modern and responsive design
+- Smooth animations with GSAP
+- Seamless scrolling with Lenis
+- Sections for projects, experience, skills, and contact
 
-## Running unit tests
+## Technologies Used
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- **Figma**: Used for design and visual conception
+- **Angular**: Main framework for application development
+- **GSAP**: Used for animations
+- **Lenis**: Used for smooth scrolling
 
-## Running end-to-end tests
+## Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Prerequisites
 
-## Further help
+Make sure you have the following installed on your machine:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [Docker](https://docs.docker.com/get-docker/)
+
+### Run the project (run on port: 4202)
+
+   ```bash
+  make dev
+   ```
+Then, open your browser and go to http://localhost:4202. You should see your portfolio in action.
+
+### License
+
+This project is licensed under the MIT License.
+
+
+### Contact
+
+For any questions or suggestions, please contact me at marshalfry1998@gmail.com.
