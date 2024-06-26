@@ -16,7 +16,7 @@ export class ContactComponent {
 
   goToGithub(){
     window.open(
-      'https://github.com/projet-qualite',
+      'https://github.com/fry-marshall',
       '_blank'
     );
   }

@@ -16,7 +16,7 @@ export class GlobalServiceService {
       short_description: 'Fchat is a web chat, where users can sign in and talk to each other with message in realtime. This app is composed of 2 web apps & 1 api. One webapp for authentication and the other is to chat. The users can access the app with their email account and can receive messages in real time.',
       details: {
         link: 'https://fchat.mfry.io',
-        github: 'https://github.com/projet-qualite/fchat-project',
+        github: 'https://github.com/fry-marshall/fchat-project',
         figma: 'https://www.figma.com/design/qX8EkL8HHPewbdGXjGVOvC/Fchat-web-app?node-id=1-2&t=Dkm5CVEVkYpaIds3-0'
       },
       skills: [
@@ -91,7 +91,7 @@ export class GlobalServiceService {
       short_description: 'FMorpion is a Tic Tac Toe game made in web. In this game, the users can either play against a bot ( made by me ) or between each other. The webapp has been made with Angular & the api made in NodeJS & Express based on Apigen.',
       details: {
         link: 'https://fmorpion.mfry.io',
-        github: 'https://github.com/projet-qualite/fmorpion-project',
+        github: 'https://github.com/fry-marshall/fmorpion-project',
         figma: 'https://www.figma.com/design/sP46rh5C4CiF7aL2faIqCa/FMorpion?node-id=0-1&t=c122oFgzp8n5pwc0-0'
       },
       skills: [
@@ -168,7 +168,7 @@ export class GlobalServiceService {
       cover: 'cover-apigen.png',
       short_description: 'Apigen is a little tool i’ve created since 2022 in order to easily help me create an api. It’s written in script shell. The api generated is in typescript with some endpoint already pre defined. So the user can easily create a model that he/she wants to add, then it will automatically create the model, controller and basic CRUD associated with this model.',
       details: {
-        github: 'https://github.com/projet-qualite/apigen',
+        github: 'https://github.com/fry-marshall/apigen',
       },
       skills: [
         {
